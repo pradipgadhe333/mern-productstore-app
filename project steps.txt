@@ -1,0 +1,41 @@
+// Steps to create node/express project and run it
+
+1) npm init -y
+2) npm install express mongoose dotenv
+3) to run -> node backend/server.js OR can use npm run dev -> after creating script in package.json -> "dev": "node backend/server.js"
+4) npm i nodemon -D  -> for hot reloading  and also change script in package.json -> "dev": "nodemon backend/server.js"
+
+
+//steps to create react app
+1)cd frontend
+2)npm create vite@latest . (dot means initialize in the current folder)
+3)npm install
+
+//other lib for react app
+1)npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+2)npm i react-router-dom
+3)npm i react-icons
+4)npm i zustand -> global state management library like redux
+5)npm i @chakra-ui/icons
+
+//Steps to deploy app
+1) cd frontend
+2) npm run build
+3) do configuration in server.js for deployment
+4) delete node modules folders both
+5) write in package.json -> script -> "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+6) go to root folder of project -> npm run build
+7) write in package.json -> script -> "start": "cross-env NODE_ENV=production node backend/server.js"
+8) npm run start
+9) on windows os error comes so install 
+10) npm install --save-dev cross-env
+11) npm run start
+12) create github repo
+13) initialize git repo -> git init 
+14) add .env to gitignore
+15) add all files to staging area and commit changes
+16)
+
+
+
+
